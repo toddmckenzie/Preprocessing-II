@@ -1,12 +1,17 @@
 // Mixins in here
 
-.button-ready() {
-  color: white;
-  width: 200px;
-  height: 45px;
-  background:green;
-  text-align: center;
-  border-radius: 10px;
+
+.button-ready(@color, @width, @height, @background, @text-align) {
+  color: @color;
+  width: @width;
+  height: @height;
+  background: @background;
+  text-align: @text-align;
+}
+
+.button-sizes() {
   font-size: 1.8rem;
+  border-radius: 10px;
   padding-top: 12px;
+
 }
