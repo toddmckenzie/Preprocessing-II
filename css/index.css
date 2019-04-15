@@ -179,7 +179,7 @@ nav {
   display: flex;
   width: 50%;
   justify-content: space-between;
-  margin-left: 23%;
+  margin-left: 30%;
   margin-right: 4%;
 }
 @media (max-width: 500px) {
@@ -196,6 +196,9 @@ nav a {
   text-decoration: none;
   color: black;
 }
+nav a:hover {
+  transform: scale(1.2);
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -207,28 +210,36 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
-header {
-  padding-top: 21px;
-  padding-bottom: 10px;
-  border-bottom: 2px dashed black;
+header .line {
+  max-width: 1500px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px dashed black;
+  position: fixed;
+  z-index: 1000;
+  background-color: tan;
 }
-header .header-top {
+header .line .header-top {
+  max-width: 800px;
+  width: 100%;
   display: flex;
   margin-bottom: 26px;
 }
 @media (max-width: 500px) {
-  header .header-top {
+  header .line .header-top {
     flex-direction: column;
     text-align: center;
     height: 68px;
     border-bottom: 2px dashed black;
   }
 }
-header .header-top h1 {
+header .line .header-top h1 {
   width: 50%;
+  padding-left: 12%;
 }
 @media (max-width: 500px) {
-  header .header-top h1 {
+  header .line .header-top h1 {
     width: 100%;
     font-size: 2.8rem;
     margin-left: 2%;
@@ -236,10 +247,11 @@ header .header-top h1 {
 }
 header img {
   padding-bottom: 20px;
-  border-top: 2px dashed black;
   max-width: 850px;
   width: 100%;
   margin: 0 auto;
+  max-width: 800px;
+  padding-left: 5%;
 }
 @media (max-width: 500px) {
   header img {
